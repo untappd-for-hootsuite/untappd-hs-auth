@@ -17,7 +17,7 @@ object Application extends Controller {
     val redirectUrl = getConfigString("application.hostname") + "/callback"
 
     // Exchange code for token
-    val resp: Future[WSResponse] = WS.url("http://untappd.com/oauth/authorize/")
+    val resp: Future[WSResponse] = WS.url("https://untappd.com/oauth/authorize/")
       .withQueryString(
         "client_id" -> clientId,
         "client_secret" -> clientSecret,
