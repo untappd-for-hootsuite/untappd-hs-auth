@@ -30,7 +30,7 @@ object Application extends Controller {
     resp.map { response =>
       val token = ( response.json \ "response" \ "access_token" ).as[String]
 
-      Redirect("http://app.untappdforhootsuite.com", Map(token" -> Seq(token)))
+      Redirect("http://app.untappdforhootsuite.com", Map("token" -> Seq(token)))
     }
   }
 }
