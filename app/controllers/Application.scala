@@ -1,6 +1,7 @@
 package controllers
 
 import play.api.Play
+import play.api.Play.current
 import play.api.mvc._
 import play.api.libs.ws._
 import scala.concurrent.Future
