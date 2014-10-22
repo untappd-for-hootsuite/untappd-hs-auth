@@ -3,5 +3,5 @@
 # ~~~~
 
 # Home page
-GET     /callback                   controllers.Application.callback
+GET     /callback                   controllers.Application.callback(code: String)
 
