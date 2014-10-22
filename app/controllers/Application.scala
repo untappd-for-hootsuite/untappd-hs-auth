@@ -5,6 +5,7 @@ import play.api.Play.current
 import play.api.mvc._
 import play.api.libs.ws._
 import scala.concurrent.Future
+import scala.concurrent.ExecutionContext.Implicits.global
 
 object Application extends Controller {
 
